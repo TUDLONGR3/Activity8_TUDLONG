@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — TUDLONG CREATIVES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+        
+        body {
+            background: url('https://asianews.network/wp-content/uploads/bfi_thumb/Philippine-Navy-25Sept2023-7doik08gyng36huo55rw6lwppz64mluxhnehla6bvpc.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+        }
+        .messenger:hover { color: #0084ff; background-color: rgba(0, 132, 255, 0.08); }
+        .instagram:hover { color: #E4405F; background-color: rgba(228, 64, 95, 0.08); }
+        .twitter:hover { color: #1DA1F2; background-color: rgba(29, 161, 242, 0.08); }
+        .facebook:hover { color: #1877F2; background-color: rgba(24, 119, 242, 0.08); }
+        
+        header {
+            background-color: rgba(250, 250, 250, 0.95);
+            padding: 1.5rem 5%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 4px solid #767fcc;
+            position: relative;
+            z-index: 20;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #497ad4, #f4d03f);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .brand-name {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #2c2b2b;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        nav {
+            background-color: rgba(192, 182, 182, 0.95);
+            padding: 1rem 0;
+            position: relative;
+            z-index: 10;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            color: #7170b9;
+        }
+        
+        main {
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: center;
+        }
+        .content-card {
+            background-color: rgba(253, 253, 253, 0.96);
+            padding: 3rem 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 90%;
+            text-align: left;
+        }
+        .card-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .left-side {
+            flex: 1 1 400px;
+        }
+        .right-side {
+            flex: 1 1 350px;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #2c2c2c;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+        
+        .contact-details {
+            color: #555;
+            line-height: 2;
+            margin-bottom: 2rem;
+        }
+        .form-box {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        textarea.form-box {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .submit-btn {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #333;
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .social-icon {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .social-links {
+                gap: 1rem;
+            }
+            .social-link {
+                padding: 0.4rem 0.8rem;
+            }
+            .right-side {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">PS</div>
+        <span class="brand-name">TUDLONG CREATIVES</span>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-card">
+            <div class="card-inner">
+                
+                <div class="left-side">
+                    <h1>Get In Touch</h1>
+                    <h2>Have a question and or project in mind? Reach to us below.</h2>
+                    <div class="contact-details">
+                        <p>CONTACT US! We listen better than your partner</p>
+                        <p><strong>EMAIL:</strong> psalmtuds@gmail.com</p>
+                        <p><strong>STUDIO ADDRESS:</strong> Philippines BAGUIO CITY NEW CUBAO</p>
+                        <p><strong>BUSINESS HOURS</strong></p>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="right-side">
+                    <form action="#sent">
+                        <input type="text" class="form-box" placeholder="Full Name" name="fullname" required>
+                        <input type="email" class="form-box" placeholder="Email" name="email" required>
+                        <textarea class="form-box" placeholder="Comments" name="comments"></textarea>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://m.me/yourusername" target="_blank" class="social-link messenger">
+                    <img src="Messenger.png" alt="Messenger" class="social-icon">
+                    <span>Messenger</span>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram">
+                    <img src="Instagram.png" alt="Instagram" class="social-icon">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-link twitter">
+                    <img src="Twitter.png" alt="X / Twitter" class="social-icon">
+                    <span>Twitter</span>
+                </a>
+                <a href="https://Facebook.com/yourusername" target="_blank" class="social-link facebook">
+                    <img src="Facebook.png" alt="Facebook" class="social-icon">
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        © 2026 TUDLONG CREATIVES — All Rights Reserved
+    </footer>
+    
+</body>
+</html>
